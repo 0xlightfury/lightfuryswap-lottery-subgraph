@@ -1,0 +1,197 @@
+lightFuryFactories(first: 5) {
+    id
+    totalPairs
+    totalTransactions
+    totalVolumeUSD
+    totalVolumeBNB
+    untrackedVolumeUSD
+    totalLiquidityUSD
+    totalLiquidityBNB
+  }
+
+bundles(first: 5) {
+    id
+    bnbPrice
+  }
+
+tokens(first: 5) {
+    id
+    name
+    symbol
+    decimals
+    tradeVolume
+    tradeVolumeUSD
+    untrackedVolumeUSD
+    totalTransactions
+    totalLiquidity
+    derivedBNB
+    derivedUSD
+    tokenDayData
+    pairDayDataBase
+    pairDayDataQuote
+    pairBase
+    pairQuote
+  }
+
+pairs(first: 5) {
+    id
+    name
+    token0
+    token1
+    reserve0
+    reserve1
+    totalSupply
+    reserveBNB
+    reserveUSD
+    trackedReserveBNB
+    token0Price
+    token1Price
+    volumeToken0
+    volumeToken1
+    volumeUSD
+    untrackedVolumeUSD
+    totalTransactions
+    block
+    timestamp
+    pairHourData
+    mints
+    burns
+    swaps
+  }
+
+transactions(first: 5) {
+    id
+    block
+    timestamp
+    mints
+    burns
+    swaps
+  }
+
+mints(first: 5) {
+    id
+    transaction
+    timestamp
+    pair
+    to
+    liquidity
+    sender
+    amount0
+    amount1
+    logIndex
+    amountUSD
+    feeTo
+    feeLiquidity
+  }
+
+burns(first: 5) {
+    id
+    transaction
+    timestamp
+    pair
+    liquidity
+    sender
+    amount0
+    amount1
+    to
+    logIndex
+    amountUSD
+    needsComplete
+    feeTo
+    feeLiquidity
+  }
+
+swaps(first: 5) {
+    id
+    transaction
+    timestamp
+    pair
+    sender
+    from
+    amount0In
+    amount1In
+    amount0Out
+    amount1Out
+    to
+    logIndex
+    amountUSD
+  }
+
+lightFuryDayDatas(first: 5) {
+    id
+    date
+    dailyVolumeBNB
+    dailyVolumeUSD
+    dailyVolumeUntracked
+    totalVolumeBNB
+    totalLiquidityBNB
+    totalVolumeUSD
+    totalLiquidityUSD
+    totalTransactions
+  }
+
+pairMinDatas(first: 5) {
+    id
+    pair
+    time
+    low
+    high
+    open
+    close
+  }
+
+pairHourDatas(first: 5) {
+    id
+    hourStartUnix
+    pair
+    reserve0
+    reserve1
+    totalSupply
+    reserveUSD
+    hourlyVolumeToken0
+    hourlyVolumeToken1
+    hourlyVolumeUSD
+    hourlyTxns
+  }
+
+pairDayDatas(first: 5) {
+    id
+    date
+    pairAddress
+    token0
+    token1
+    reserve0
+    reserve1
+    totalSupply
+    reserveUSD
+    dailyVolumeToken0
+    dailyVolumeToken1
+    dailyVolumeUSD
+    dailyTxns
+  }
+
+tokenDayDatas(first: 5) {
+    id
+    date
+    token
+    dailyVolumeToken
+    dailyVolumeBNB
+    dailyVolumeUSD
+    dailyTxns
+    totalLiquidityToken
+    totalLiquidityBNB
+    totalLiquidityUSD
+    priceUSD
+  }
+
+tradeTransactions {
+    id
+    pairAddress
+    time
+    type
+    usdAmount
+    mainAmount
+    otherAmount
+    priceUSD
+    txhash
+}
